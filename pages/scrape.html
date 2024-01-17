@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Salesforce Commerce Cloud Product Extractor</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/sfview.css">
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <style>
+      .finished{
+        background-color:rgba(128, 128, 128, 0.905) !important;
+        }
+    </style>
+  </head>
+  <body style="padding:8px">
+    <div style="display:none" id="curStep"></div>
+
+    <div class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large">
+      Scrape Status
+    </div>
+
+    <div id="logTitle" style="" onclick="toggleLog()"><b>Log - click to View/Hide</b></div>
+    <div id="stepLog" style="border:1px solid black; border-radius:3px; max-height:300px; overflow:auto; width:90%; display:none"  style="display:none">
+      <div></div>
+    </div>
+
+    <div id="pdpTitle" class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large" style="xdisplay:none">
+      Discovered PDP's
+    </div>
+    <div style="padding-bottom: 1rem; display:none" id="delBut">
+      <button class="slds-button slds-button_brand"  onclick="deleteRows()">Delete Selected Rows</button>
+    </div>
+      <div id="myGrid" style="height: 400px; width:90%;" class="ag-theme-alpine"></div>
+
+      <div id="startBut" style="text-align:center;display:none">
+        <button class="slds-button slds-button_brand" id="" onclick="continueScrape()">Continue</button> 
+      </div>
+
+
+    <br />
+
+    <div id="resulTitle" class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large" style="display:none">
+      Data
+    </div>
+    <div id="datagrid" style="height: 400px; width:90%;" class="ag-theme-alpine">
+
+    </div>
+
+    <br />
+
+
+
+  </body>
+
+  <script src="./initScrape.js"></script>  
+  </html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <inventory xmlns="http://www.demandware.com/xml/impex/inventory/2007-05-31">
+            <inventory-list>
+                <header list-id="superdry-inv">
+                    <default-instock>false</default-instock>
+                    <use-bundle-inventory-only>false</use-bundle-inventory-only>
+                    <on-order>false</on-order>
+                </header>
+                <records>
+        <record product-id="QxLLNmJu">
+          <allocation>602</allocation>
+          <allocation-timestamp>2024-01-08T16:15:29Z</allocation-timestamp>
+          <perpetual>false</perpetual>
+          <preorder-backorder-handling>none</preorder-backorder-handling>
+          <ats>602</ats>
+          <on-order>0</on-order>
+          <turnover>0</turnover>
+      </record>
+      <record product-id="bFZ0Qqf4">
+          <allocation>76</allocation>
+          <allocation-timestamp>2024-01-08T16:15:29Z</allocation-timestamp>
+          <perpetual>false</perpetual>
+          <preorder-backorder-handling>none</preorder-backorder-handling>
+          <ats>76</ats>
+          <on-order>0</on-order>
+          <turnover>0</turnover>
+      </record>
+      <record product-id="0V5fKiRM">
+          <allocation>471</allocation>
+          <allocation-timestamp>2024-01-08T16:15:29Z</allocation-timestamp>
+          <perpetual>false</perpetual>
+          <preorder-backorder-handling>none</preorder-backorder-handling>
+          <ats>471</ats>
+          <on-order>0</on-order>
+          <turnover>0</turnover>
+      </record>
+      <record product-id="xEdUPyXq">
+          <allocation>160</allocation>
+          <allocation-timestamp>2024-01-08T16:15:29Z</allocation-timestamp>
+          <perpetual>false</perpetual>
+          <preorder-backorder-handling>none</preorder-backorder-handling>
+          <ats>160</ats>
+          <on-order>0</on-order>
+          <turnover>0</turnover>
+      </record>
+      </records>
+        </inventory-list>
+        </inventory>
+        

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Salesforce Commerce Cloud Product Extractor</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/sfview.css">
+    <style>
+
+    </style>
+  </head>
+  <body style="padding:8px">
+
+    <div class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large">
+      Commerce Cloud Demo Builder
+    </div>
+
+    <div id="start" class="slds-text-body_regular slds-p-bottom_medium">
+        To map a field from the page to a Commerce Cloud field, right click on the selected element, choose the field type, and the Commerce Cloud field top map it to.
+    </div>
+
+    <div id="fmap">
+      <input type="hidden" id="selectorValue" />
+        <div class="slds-form-element" >
+            <label class="slds-form-element__label" for="selector">
+              <abbr class="" title="required"> </abbr>Selected Element</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="selector" placeholder="Selector" required="" class="slds-input" />
+            </div>
+            <div class="slds-form-element__control"  style="text-align:right">
+              <button type="button" class="slds-button slds-button_brand" onclick="test()">☑️</button>
+            </div>
+          </div>
+
+          <div class="slds-form-element" >
+            <label class="slds-form-element__label" for="text-input-id-47">
+              <abbr class="" title="required"> </abbr>Type</label>
+            <div class="slds-form-element__control">
+              <select id="ftype" class="slds-select" >
+                    <option value="text">Text</option>
+                    <option value="html">Rich Text</option>
+                    <option value="number">Number</option>
+                    <option value="image">Image</option>
+                    <option value="url">Link</option>
+              </select>
+            </div>
+          </div>  
+          
+          <div class="slds-form-element" >
+            <label class="slds-form-element__label" for="text-input-id-47">
+              <abbr class="" title="required"> </abbr>Commerce Field</label>
+            <div class="slds-form-element__control">
+              <select id="cfield" class="slds-select" > 
+                    <option value="ID">Sku</option>
+                    <option value="name">Name</option>
+                    <option value="shortDescription">Description</option>
+                    <option value="longDescription">Long Description</option>
+                    <option value="price">Price</option>
+                    <option value="image1">Image1</option>
+                    <option value="image2">Image2</option>
+                    <option value="image3">Image3</option>
+                    <option value="image4">Image4</option>
+                    <option value="image5">Image5</option>
+                    <option value="custom">Custom</option>
+              </select>
+            </div>
+          </div>
+ 
+          <div class="slds-form-element" id="customfn" style="display:none">
+            <label class="slds-form-element__label" for="custFieldName">
+              <abbr class="" title=""> </abbr>Custom Field Name</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="custFieldName" placeholder="" class="slds-input" />
+            </div>
+          </div>
+          
+
+
+          <div class="slds-form-element" id="resulttext">
+            <label class="slds-form-element__label" for="selector">
+              <abbr class="" title="required"> </abbr>Result</label>
+            <div class="slds-form-element__control">
+              <textarea type="text" id="resulttxt" placeholder="" required="" class="slds-textarea" ></textarea>
+            </div>
+          </div>             
+          
+          <div class="slds-form-element slds-p-bottom_medium" style="text-align:center">
+            <button class="slds-button slds-button_brand" id="addMap">Add</button> 
+          </div>          
+    </div>
+
+   <div id="fields" style="height:90%;max-height:600px;overflow:auto;border:1px solid black; display:none; border-radius:4px;margin:3px;padding:3px">
+
+   </div> 
+
+   <div class="slds-form-element slds-p-bottom_medium" style="text-align:right">
+    <button class="slds-button slds-button_brand" id="nxtButton">Next</button> 
+  </div> 
+
+
+
+   <div style="position:absolute;bottom:10px;left:0px; width:100%; margin-bottom:10px ; text-align:center">
+      <p id="info">..</p>
+    </div>
+   <script src="./fmap.js"></script>
+</body>
+</html>

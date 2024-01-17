@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Salesforce Commerce Cloud Product Extractor</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/sfview.css">
+    <style>
+      #step2 {display:none};
+      #step3 {display: none;}
+      #step4 {display: none;}
+    </style>
+  </head>
+  <body style="padding:8px">
+
+    <div class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large">
+      Commerce Cloud Demo Builder
+    </div>
+
+    <div id="start" class="slds-text-body_regular slds-p-bottom_medium">
+      Welcome to the Commerce Cloud Demo Builder, to start enter the project details and  URL to a PLP of the site you wish to extract products from.
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          Project Name</label>
+        <div class="slds-form-element__control">
+          <input type="text" id="projname" placeholder="" class="slds-input" />
+        </div>
+      </div>  
+
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="slds-required" title="required">* </abbr>URL</label>
+        <div class="slds-form-element__control">
+          <input type="text" id="url" placeholder="URL - No HTTP needed" required="" onkeypress="if (event.key === 'Enter'){event.preventDefault();document.getElementById('btn').click();}" class="slds-input" />
+        </div>
+      </div>  
+ 
+      
+      <div class="slds-form-element slds-p-bottom_medium" style="text-align:right">
+        <button class="slds-button slds-button_brand" id="btn">Load PLP</button> 
+        </div>      
+    </div>
+
+
+    <div id="step2">
+      We now need to identify all the links to the PDP pages, you can hover over the products to identify the link. Once identified Right Mouse click to select. Keep selecting further products till we can identify the slector pattern.
+      <div class="slds-form-element" >
+        <div class="slds-form-element__control" id="selmsg">
+        </div>
+      </div>        
+      
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="" title="required"> </abbr>Selector</label>
+        <div class="slds-form-element__control">
+          <input type="text" id="selector" placeholder="Selector" required="" class="slds-input" />
+        </div>
+      </div>  
+
+      <div class="slds-form-element slds-p-bottom_medium" style="text-align:right">
+        <button class="slds-button slds-button_brand" id="testsel">Test</button>&nbsp; 
+        <button class="slds-button slds-button_brand" id="step3button">Next</button> 
+      </div>
+    </div>
+
+    <div id="step3">
+      Navigate to a PDP, from here we can extract product data, and map it to the Commerce Cloud Product Model, once loaded click 'Next' to continue
+
+      <div class="slds-form-element slds-p-bottom_medium" style="text-align:right">
+        <button class="slds-button slds-button_brand" id="step4button">Next</button> 
+      </div>
+    </div>    
+
+
+    <div id="step4">
+       Right click on the data you want to capture, select the field to map it to and the data type, and click add. Continue till you have added all the fields you want to collect, then click next.
+ 
+
+      <div id="s30" class="slds-form-element slds-p-bottom_medium" style="text-align:right">
+        <button class="slds-button slds-button_brand" id="step5button">Next</button> 
+      </div>
+    </div>     
+
+
+
+<div style="position:absolute;bottom:110px;left:0px; margin-bottom:10px ; text-align:center">
+  <button class="slds-button slds-button_brand" id="restart">Restart</button> 
+    <p id="info">..</p>
+  </div>
+
+
+
+    <script src="./renderer.js"></script>
+
+
+
+
+  </body>
+
+</html>

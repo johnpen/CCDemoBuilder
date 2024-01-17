@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <catalog xmlns="http://www.demandware.com/xml/impex/catalog/2006-10-31" catalog-id="superdry-cat">
+            <header>
+                <image-settings>
+                    <internal-location base-path="/"/>
+                    <view-types>
+                        <view-type>large</view-type>
+                        <view-type>medium</view-type>
+                        <view-type>small</view-type>
+                        <view-type>swatch</view-type>
+                        <view-type>hi-res</view-type>
+                    </view-types>
+                    <alt-pattern>${productname}</alt-pattern>
+                    <title-pattern>${productname}</title-pattern>
+                </image-settings>
+            </header>
+        
+            <category category-id="root">
+                <display-name xml:lang="x-default">superdry</display-name>
+                <description xml:lang="x-default">superdry</description>
+                <online-flag>true</online-flag>
+                <template/>
+                <page-attributes/>
+                <custom-attributes>
+                    <custom-attribute attribute-id="enableCompare">true</custom-attribute>
+                    <custom-attribute attribute-id="showInMenu">true</custom-attribute>
+                </custom-attributes>
+            </category><category category-id="Jackets">
+<display-name xml:lang="x-default">jackets</display-name>
+<online-flag>true</online-flag>
+<parent>root</parent>
+<template/>
+<page-attributes>
+    <page-title xml:lang="x-default">jackets</page-title>
+</page-attributes>
+<custom-attributes>
+    <custom-attribute attribute-id="showInMenu">true</custom-attribute>
+</custom-attributes>
+</category><category category-id="Hoodies">
+<display-name xml:lang="x-default">hoodies</display-name>
+<online-flag>true</online-flag>
+<parent>root</parent>
+<template/>
+<page-attributes>
+    <page-title xml:lang="x-default">hoodies</page-title>
+</page-attributes>
+<custom-attributes>
+    <custom-attribute attribute-id="showInMenu">true</custom-attribute>
+</custom-attributes>
+</category><category category-id="root">
+<display-name xml:lang="x-default">root</display-name>
+<online-flag>true</online-flag>
+<parent>root</parent>
+<template/>
+<page-attributes>
+    <page-title xml:lang="x-default">root</page-title>
+</page-attributes>
+<custom-attributes>
+    <custom-attribute attribute-id="showInMenu">true</custom-attribute>
+</custom-attributes>
+</category>
+      <product product-id="QxLLNmJu">
+      <ean/>
+      <upc/>
+      <unit/>
+      <unit-quantity>0</unit-quantity>
+      <min-order-quantity>1</min-order-quantity>
+      <step-quantity>1</step-quantity>
+      <display-name xml:lang="x-default">Hooded Sports Puffer Jacket</display-name>
+      <short-description xml:lang="x-default">You can't go wrong with a classic puffer. The hooded Sports Puffer jacket embraces the iconic design to provide you with a reliable layering option. The branding is subtle, so the quilted padding stands out and does the talking. It creates a contemporary silhouette that provides style as well as comfort. Elevated with a fleece lining, this jacket can help to keep you feeling warm and cosy even when the weather begins to cool.Relaxed fit – the classic Superdry fit. Not too slim, not too loose, just right. Go for your normal sizeDurable water repellency - This fabric has been coated with an advanced water-resistant finishBungee cord hoodZip fasteningTwin zip pocketsElasticated cuffsBungee cord hemFleece lined bodyInternal mesh pocketEmbroidered logoSuperdry patch</short-description>
+      <long-description xml:lang="x-default"></long-description>
+      <online-flag>true</online-flag>
+      <available-flag>false</available-flag>
+      <searchable-flag>true</searchable-flag>
+      <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+      <images>
+        
+    <image-group view-type="hi-res">
+      <image path="upload9223368955666336345.jpg"/>
+    </image-group>
+    <image-group view-type="large">
+      <image path="upload9223368955666336345.jpg"/>
+    </image-group>
+    <image-group view-type="medium">
+      <image path="upload9223368955666336345.jpg"/>
+    </image-group>
+    <image-group view-type="small">
+      <image path="upload9223368955666336345.jpg"/>
+    </image-group>
+    <image-group view-type="swatch">
+      <image path="upload9223368955666336345.jpg"/>
+    </image-group>  
+    
+      </images>
+      <brand>food</brand>
+      <page-attributes/>
+      <pinterest-enabled-flag>false</pinterest-enabled-flag>
+      <facebook-enabled-flag>false</facebook-enabled-flag>
+    
+      </product>
+      
+      <product product-id="bFZ0Qqf4">
+      <ean/>
+      <upc/>
+      <unit/>
+      <unit-quantity>0</unit-quantity>
+      <min-order-quantity>1</min-order-quantity>
+      <step-quantity>1</step-quantity>
+      <display-name xml:lang="x-default">Sports Puffer Gilet</display-name>
+      <short-description xml:lang="x-default">The perfect staple to throw on after your workout, the Sports Puffer Gilet. This essential will keep you at your best comfort and style active all season round. Adding layers without compromising your personal style, the timeless Gilet is the ideal companion for you.Relaxed fit – the classic Superdry fit. Not too slim, not too loose, just right. Go for your normal sizeSleevelessZip fasteningTwo front zip pocketsBunjee cord adjustable hemFleece liningInternal mesh pocketEmbroidered Code logo on chestEmbroidered Superdry logo on back of the neckDurable water repellency - This fabric has been coated with an advanced water-resistant finish</short-description>
+      <long-description xml:lang="x-default"></long-description>
+      <online-flag>true</online-flag>
+      <available-flag>false</available-flag>
+      <searchable-flag>true</searchable-flag>
+      <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+      <images>
+        
+    <image-group view-type="hi-res">
+      <image path="upload9223368955666320179.jpg"/>
+    </image-group>
+    <image-group view-type="large">
+      <image path="upload9223368955666320179.jpg"/>
+    </image-group>
+    <image-group view-type="medium">
+      <image path="upload9223368955666320179.jpg"/>
+    </image-group>
+    <image-group view-type="small">
+      <image path="upload9223368955666320179.jpg"/>
+    </image-group>
+    <image-group view-type="swatch">
+      <image path="upload9223368955666320179.jpg"/>
+    </image-group>  
+    
+      </images>
+      <brand>food</brand>
+      <page-attributes/>
+      <pinterest-enabled-flag>false</pinterest-enabled-flag>
+      <facebook-enabled-flag>false</facebook-enabled-flag>
+    
+      </product>
+      
+      <product product-id="0V5fKiRM">
+      <ean/>
+      <upc/>
+      <unit/>
+      <unit-quantity>0</unit-quantity>
+      <min-order-quantity>1</min-order-quantity>
+      <step-quantity>1</step-quantity>
+      <display-name xml:lang="x-default">Vintage Shadow Hoodie </display-name>
+      <short-description xml:lang="x-default">A familiar comfort that's as luxurious as it is classic, the Vintage Shadow hoodie is a traditional piece with an innovative twist. It features our Superdry logo in a striking, old school style that resonates with the soulful spirit of decades past. This eye-catching nostalgia doesn't take away from what makes a classic hoodie so great, though; this piece is a versatile choice, effortless to pull on and easy to fit into any casual look.Relaxed fit – the classic Superdry fit. Not too slim, not too loose, just right. Go for your normal sizeLined hood with adjustable drawcordLong sleevesRibbed trimsFront pouch pocketBrushed liningPrinted Superdry graphic</short-description>
+      <long-description xml:lang="x-default"></long-description>
+      <online-flag>true</online-flag>
+      <available-flag>false</available-flag>
+      <searchable-flag>true</searchable-flag>
+      <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+      <images>
+        
+    <image-group view-type="hi-res">
+      <image path="upload9223368955666135387.jpg"/>
+    </image-group>
+    <image-group view-type="large">
+      <image path="upload9223368955666135387.jpg"/>
+    </image-group>
+    <image-group view-type="medium">
+      <image path="upload9223368955666135387.jpg"/>
+    </image-group>
+    <image-group view-type="small">
+      <image path="upload9223368955666135387.jpg"/>
+    </image-group>
+    <image-group view-type="swatch">
+      <image path="upload9223368955666135387.jpg"/>
+    </image-group>  
+    
+      </images>
+      <brand>food</brand>
+      <page-attributes/>
+      <pinterest-enabled-flag>false</pinterest-enabled-flag>
+      <facebook-enabled-flag>false</facebook-enabled-flag>
+    
+      </product>
+      
+      <product product-id="xEdUPyXq">
+      <ean/>
+      <upc/>
+      <unit/>
+      <unit-quantity>0</unit-quantity>
+      <min-order-quantity>1</min-order-quantity>
+      <step-quantity>1</step-quantity>
+      <display-name xml:lang="x-default">Vintage Logo Narrative Hoodie</display-name>
+      <short-description xml:lang="x-default">Personal style is all about telling a story, even when it comes down to your wardrobe basics. The Narrative hoodie is an elevated take on a fashion icon, featuring the Superdry logo with vintage branding. This comfortable piece channels the classic hoodie look with a distinctly Japanese style, bringing together the old and the new to make a distinct impression about who you authentically are.Relaxed fit – the classic Superdry fit. Not too slim, not too loose, just right. Go for your normal sizeDrawcord adjustable hoodPrinted graphicFront pouch pocketRibbed trimsSignature Superdry tab on right sleeveBrushed lining</short-description>
+      <long-description xml:lang="x-default"></long-description>
+      <online-flag>true</online-flag>
+      <available-flag>false</available-flag>
+      <searchable-flag>true</searchable-flag>
+      <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+      <images>
+        
+    <image-group view-type="hi-res">
+      <image path="upload9223368955666201816.jpg"/>
+    </image-group>
+    <image-group view-type="large">
+      <image path="upload9223368955666201816.jpg"/>
+    </image-group>
+    <image-group view-type="medium">
+      <image path="upload9223368955666201816.jpg"/>
+    </image-group>
+    <image-group view-type="small">
+      <image path="upload9223368955666201816.jpg"/>
+    </image-group>
+    <image-group view-type="swatch">
+      <image path="upload9223368955666201816.jpg"/>
+    </image-group>  
+    
+      </images>
+      <brand>food</brand>
+      <page-attributes/>
+      <pinterest-enabled-flag>false</pinterest-enabled-flag>
+      <facebook-enabled-flag>false</facebook-enabled-flag>
+    
+      </product>
+      
+      <category-assignment category-id="Jackets" product-id="QxLLNmJu">
+          <primary-flag>true</primary-flag>
+      </category-assignment>    
+      
+      <category-assignment category-id="Jackets" product-id="bFZ0Qqf4">
+          <primary-flag>true</primary-flag>
+      </category-assignment>    
+      
+      <category-assignment category-id="Hoodies" product-id="0V5fKiRM">
+          <primary-flag>true</primary-flag>
+      </category-assignment>    
+      
+      <category-assignment category-id="Hoodies" product-id="xEdUPyXq">
+          <primary-flag>true</primary-flag>
+      </category-assignment>    
+      </catalog>

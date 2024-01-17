@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Salesforce Commerce Cloud Product Extractor</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/sfview.css">
+
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% {  transform: rotate(359deg); }
+    }
+    .icon {
+        animation: spin 2s linear infinite;
+    
+    }
+
+  
+    
+    #button {
+      margin-left:auto;
+      margin-right:auto;
+      background: #014486;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      height: 44px;
+      width: 150px;
+      padding: 10px;
+      box-siing: border-box;
+      border-radius: 5px;
+cursor: pointer;
+      position: relative;
+      transition: width 0.25s ease 0.25s, border-radius 0.25s ease 0.25s, color 0.25s ease 0.5s, background 0.25s ease;
+    }
+    #button i {
+      color: #FFFFFF;
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+    }
+    #button .fa-check {
+      transform: scale(0);
+      transition: transform 0.25s ease;
+    }
+    #button.publishing {
+      width: 44px;
+      overflow: hidden;
+      color: rgba(255, 255, 255, 0);
+      border-radius: 44px;
+      transition: color 0.25s ease, width 0.25s ease 0.25s, border-radius 0.25s ease 0.25s;
+      -webkit-animation: bounce 3s ease infinite;
+              animation: bounce 3s ease infinite;
+    }
+    #button.publishing .fa-circle-o-notch {
+      opacity: 1;
+      transition: opacity 0.25s ease 0.5s;
+    }
+    #button.published {
+      background: #35B197;
+      color: rgba(255, 255, 255, 0);
+      width: 44px;
+      border-radius: 44px;
+      transition: background 0.25s ease;
+    }
+    #button.published .fa-check {
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 0.25s ease 0.25s;
+    }
+    #button.published .fa-circle-o-notch {
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    
+    @-webkit-keyframes bounce {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes bounce {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+  
+
+    </style>
+
+  </head>
+  <body style="padding:8px">
+    
+    <div class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large">
+        Scrape Settings
+      </div>
+
+
+
+      <div id="" class="slds-form-element">
+        Project: <strong id="proj"></strong>
+      </div>
+
+      <div id="" class="slds-form-element">
+        Base Url:  <strong id="url"></strong>
+      </div>
+
+      <div class="slds-form-element" style="display:none" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="" title="required"> </abbr>Site Name</label>
+        <div class="slds-form-element__control">
+          <input type="text" id="sitename" placeholder="sitename" required="true" class="slds-input" />
+        </div>
+      </div>
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="" title="required"> </abbr>Base Currency</label>
+        <div class="slds-form-element__control">
+          <select id="bcurrency" class="slds-select">
+                <option  value="GBP" selected>£ GBP</option>
+
+          </select>
+        </div>
+      </div> 
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="" title="required"> </abbr>Supported Currency</label>
+        <div class="slds-form-element__control">
+          <select id="scurrency" class="slds-select" multiple="true">
+                <option  value="GBP">£ GBP</option>
+                <option  value="USD">$ USD</option>
+                <option  value="EUR">€ EUR</option>
+                <option  value="JPY">¥ JPY</option>
+          </select>
+        </div>
+      </div>          
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="" title="required"> </abbr>Base Locale</label>
+        <div class="slds-form-element__control">
+          <select id="blanguage" class="slds-select">
+                <option  value="en_GB" selected>English</option>
+                <option  value="fr_FR">French</option>
+                <option  value="de_DE">German</option>
+                <option  value="ja_JP">Japanese</option>
+                <option  value="es_ES">Spanish</option>
+          </select>
+        </div>
+      </div>   
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="" title="required"> </abbr>Translate To</label>
+        <div class="slds-form-element__control">
+          <select id="tlanguage" class="slds-select" multiple="true">
+            <option  value="en_GB" selected>English</option>
+            <option  value="fr_FR">French</option>
+            <option  value="de_DE">German</option>
+            <option  value="ja_JP">Japanese</option>
+            <option  value="es_ES">Spanish</option>
+          </select>
+        </div>
+      </div>          
+
+      <div class="slds-form-element" style="" >
+        <label class="slds-form-element__label" for="text-input-id-47">
+          <abbr class="" title="required"> </abbr>DeepL API Key</label>
+        <div class="slds-form-element__control">
+          <input type="text" id="apikey" placeholder="apikey"  class="slds-input" />
+        </div>
+      </div>      
+
+      <div class="slds-form-element" >
+        Pause before scraping PDP
+      </div>
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">Pause</label>
+        <div class="slds-form-element__control">
+          <input type="checkbox" id="pause"  checked/>
+        </div>
+      </div>   
+
+      <div class="slds-form-element" >
+        If you have any isses scraping, disable headless mode
+      </div>
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="text-input-id-47">Headless</label>
+        <div class="slds-form-element__control">
+          <input type="checkbox" id="headless" checked />
+        </div>
+      </div>       
+      <div class="slds-form-element" >
+        If you are not matching fields as expected try changing the wait options, sorted fastest -> Slowest
+      </div>
+
+      <div class="slds-form-element" >
+        <label class="slds-form-element__label" for="waitfor">
+          <abbr class="" title="required"> </abbr>Wait For Options</label>
+        <div class="slds-form-element__control">
+          <select id="waitfor" class="slds-select">
+            <option  value="load">Page Load</option>
+            <option  value="domcontentloaded">DOM Content Loaded</option>
+            <option  value="networkidle0">No Network Connections</option>
+            <option  value="networkidle2" selected>&lt; 2 Network Connections</option>
+            
+          </select>
+        </div>
+      </div>       
+
+      
+      <div class="slds-form-element slds-p-bottom_medium" style="text-align:center">
+        <div id="button">Start
+          <i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i>
+          <i class="fa fa-fw fa-check fa-2x"></i>
+        </div>
+
+      </div>    
+          
+
+      <div id="fin" style="display:none">
+        <div class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large" style="text-align:center">
+          Scrape Completed
+        </div>
+        <div style="text-align:center">
+            Scrape completed, click on the log link to view details. <br/> Files have been exported and a site import zip file has been created.<br>Use the standard Site Import options in Business Manager to import the zip file.
+        </div>
+        <div class="slds-form-element slds-p-bottom_medium" id="files" style="text-align:center;">
+          <button class="slds-button slds-button_brand" id="viewfiles">View Files</button> 
+        </div>         
+      </div>      
+  </body>
+  <script src="./fa.js"></script>  
+  <script src="./startScrape.js"></script>  
+  </html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <site xmlns="http://www.demandware.com/xml/impex/site/2007-04-30" site-id="superdry-site">
+            <name>superdry</name>
+            <currency>GBP</currency>
+            <taxation>gross</taxation>
+            <custom-cartridges>app_custom_nto:plugin_ditto:plugin_lightningordermanagement:plugin_dis:plugin_cartridge_merge:plugin_commercepayments:plugin_datadownload:plugin_wishlists:plugin_giftregistry:lib_productlist:plugin_instorepickup:plugin_sitemap:plugin_applepay:plugin_sitemap:plugin_productcompare:plugin_service_cloud:int_service_cloud:app_storefront_base:int_handlerframework:app_q_pwa_support:plugin_hooktacular</custom-cartridges>
+            <storefront-status>online</storefront-status>
+        </site>

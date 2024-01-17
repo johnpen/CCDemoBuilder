@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <catalog xmlns="http://www.demandware.com/xml/impex/catalog/2006-10-31" catalog-id="specsavers-cat">
+            <header>
+                <image-settings>
+                    <internal-location base-path="/"/>
+                    <view-types>
+                        <view-type>large</view-type>
+                        <view-type>medium</view-type>
+                        <view-type>small</view-type>
+                        <view-type>swatch</view-type>
+                        <view-type>hi-res</view-type>
+                    </view-types>
+                    <alt-pattern>${productname}</alt-pattern>
+                    <title-pattern>${productname}</title-pattern>
+                </image-settings>
+            </header>
+        
+            <category category-id="root">
+                <display-name xml:lang="x-default">specsavers</display-name>
+                <description xml:lang="x-default">specsavers</description>
+                <online-flag>true</online-flag>
+                <template/>
+                <page-attributes/>
+                <custom-attributes>
+                    <custom-attribute attribute-id="enableCompare">true</custom-attribute>
+                    <custom-attribute attribute-id="showInMenu">true</custom-attribute>
+                </custom-attributes>
+            </category></catalog>

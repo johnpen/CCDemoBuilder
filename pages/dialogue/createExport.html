@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Salesforce Commerce Cloud Product Extractor</title>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/styles/sfview.css">
+
+</head>
+<body style="padding:8px">
+    <div class="slds-text-heading_medium slds-align_absolute-center slds-p-bottom_large">
+        Data Files Detected
+      </div>
+
+      <div id="start" class="slds-text-body_regular slds-p-bottom_medium">
+        We have detected data files from a previous run based on the '<span id="proj"></span>' project. <br>
+        Do you want to go directly to the 'Export' screen or re-run the project.
+      </div>      
+
+      <div style="margin-bottom:10px ; text-align:center">
+        <button class="slds-button slds-button_brand" id="export">Export</button> &nbsp;&nbsp;
+        <button class="slds-button slds-button_brand" id="restart">Restart</button>
+        </div>
+
+    <script src="./export.js"></script>  
+</body>
+</html>

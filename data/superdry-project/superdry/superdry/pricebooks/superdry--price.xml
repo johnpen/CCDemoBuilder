@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <pricebooks xmlns="http://www.demandware.com/xml/impex/pricebook/2006-10-31">
+        <pricebook>
+            <header pricebook-id="superdry-">
+                <currency></currency>
+                <display-name xml:lang="x-default">superdry-</display-name>
+                <online-flag>true</online-flag>
+            </header>
+
+            <price-tables>
+    
+    
+    <price-table product-id="QxLLNmJu">
+    <amount quantity="1">66.49</amount>
+    </price-table>
+
+    
+    
+    <price-table product-id="bFZ0Qqf4">
+    <amount quantity="1">16.50</amount>
+    </price-table>
+
+    
+    
+    <price-table product-id="0V5fKiRM">
+    <amount quantity="1">41.99</amount>
+    </price-table>
+
+    
+    
+    <price-table product-id="xEdUPyXq">
+    <amount quantity="1">41.99</amount>
+    </price-table>
+
+            </price-tables>
+            </pricebook>
+        </pricebooks>
+
+    
